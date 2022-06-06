@@ -10,13 +10,20 @@
 <div class="flex-container" >
     <div class="center-container">
     <h3 class="gold-color margin-h3">You</h3>
-    <h3 class="white-color margin-h3" id="cards-selection">Cards:</h3>
-    <h3 class="white-color margin-h3" id="card-sum">Sum:</h3>
+<div>
+    <h3 class="white-color margin-h3" id="my-cards" >My Cards:</h3>
+    
+</div>
+    <h3 class="white-color margin-h3" >Sum:
+      <span id="card-sum"></span>
+    </h3>
     </div>
     <div class="center-container">
     <h3 class="gold-color margin-h3">Player 2</h3>
     <h3 class="white-color margin-h3">Cards:</h3>
-    <h3 class="white-color margin-h3">Sum:</h3>
+    <h3 class="white-color margin-h3">Sum:
+       
+    </h3>
     </div>
 </div>
 <div class="flex-container flex-container-column">
@@ -34,7 +41,31 @@
 </div>
 </div>
 <div class="flex-container">
-   <div class="inline-block-display"><h3 class="gold-color" id="card-suits">My Hand</h3></div>
+   <div class="inline-block-display">
+       <!-- you are appending children to card-suits which has a class
+    so everything in it is gonna have those styles
+
+just create another html element and specifically put the cards in there
+like you did above*-->
+<!-- Cant i just create the ul in js and the li within it or no
+but you didnt do that?  you just created li and added them to h3
+which doesnt make sense, you would have to create a ul
+add li to it
+and then add the ul after the h3
+ye ur right but im just a little confused on how to add elements to the parent 
+the problem is your html
+you dont have a good structure, you trynna raw dog it
+you need a structure that is seperate and each element
+has its own purpose
+h3 is a heading, it just has a text in it
+no children.
+
+for all the cards, like you did above
+create an empty ul, seperate from the title, and add to it
+-->
+       <h3 class="gold-color" >My Hand</h3>
+       <ul id="my-hand"></ul>
+    </div>
     <div class="inline-block-display"><h3 class="gold-color">Player 2's Hand</h3></div>
 </div>
 <script src="index.js"></script>
